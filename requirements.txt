@@ -1,0 +1,17 @@
+# Core
+fastapi>=0.110.0
+uvicorn>=0.29.0
+sqlalchemy>=2.0.0
+alembic>=1.13.0
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+
+# Authentication & Security
+python-jose[cryptography]>=3.3.0
+passlib[bcrypt]>=1.7.4
+python-multipart
+email-validator>=2.0.0
+bcrypt>=4.0,<5.0
+
+# Development
+httpx>=0.28.0  # required by TestClient
