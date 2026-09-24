@@ -10,9 +10,9 @@ class UserBase(BaseModel):
     model_config = ConfigDict(
         json_schema_extra={
             "example": {
-                "username": "johndoe",
-                "email": "john.doe@example.com",
-                "full_name": "John Doe",
+                "username": "harold",
+                "email": "harold@example.com",
+                "full_name": "Harold andres ",
             }
         }
     )
@@ -37,7 +37,7 @@ class UserCreate(UserBase):
             "example": {
                 "username": "johndoe",
                 "email": "john.doe@example.com",
-                "full_name": "John Doe",
+                "full_name": "John franco",
                 "password": "SuperSecret123!",
             }
         }
@@ -53,7 +53,7 @@ class UserUpdate(BaseModel):
     model_config = ConfigDict(
         json_schema_extra={
             "example": {
-                "full_name": "John Doe Jr.",
+                "full_name": "harold andres",
                 "avatar_url": "https://example.com/avatar.png",
             }
         }
@@ -77,7 +77,7 @@ class UserRead(BaseModel):
                 "email": "john.doe@example.com",
                 "full_name": "John Doe",
                 "avatar_url": None,
-                "role": "user",
+                "role": "USER",
                 "is_active": True,
                 "created_at": "2026-09-15T20:00:00Z",
                 "updated_at": "2026-09-15T20:00:00Z",
